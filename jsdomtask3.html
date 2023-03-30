@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="jsdomtask.css">
+    <title>Dom task 3</title>
+  </head>
+  <body>
+    <header>
+       <div class="conteiner"> <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+Add Employee</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Add user</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div> 
+    <div class="modal-body castom_modal">
+     <form action="#" class="form"><select class="form-control" name="nationality" aria-placeholder="Nationality" id="nationality">
+            <option>Nationality</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Russia">Russia</option>
+            <option value="Georgia">Georgia</option>
+          </select><select class="form-control" name="position" id="position" aria-placeholder="Position">
+            <option >Position </option>
+            <option value="Frontend Deweloper ">Frontend Deweloper </option>
+            <option value="Backend Developer">Backend Dewoloper</option>
+          </select><select class="form-control" name="experience" id="experience" aria-placeholder="Experience">
+            <option>Experience</option>
+            <option value="6 Month">6 Month</option>
+            <option value="10 Month">10 Month</option>
+            <option value="1Year">1 Year</option>
+        <input type="text" name="Name" placeholder="Name" id="name">
+        <input type="text" name="Surname" placeholder="Surname" id="surname">
+        <input type="number" name="Age" placeholder="Age" id="age">
+        
+      </form>
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" id="addbtn">Add Employee</button>
+    </div>
+  </div>
+</div>
+</div>
+      </nav></div>
+    </header>
+    <main>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Age</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Position</th>
+                <th scope="col">Experience</th>
+                <th scope="col">Delete</th>
+               
+              </tr>
+            </thead>
+            <tbody id="tBody">
+             
+             
+            </tbody>
+          </table>
+    </main>
+    <footer></footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jsdomtask3.js"></script>
+  </body>
+</html>
